@@ -5,6 +5,7 @@ const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
+const cors = require('cors');
 const hpp = require('hpp');
 const cookieParser = require('cookie-parser');
 
@@ -18,6 +19,13 @@ const viewRouter = require('./routes/viewRoutes');
 const bookingRouter = require('./routes/bookingRoutes');
 
 const app = express();
+app.use(
+  cors({
+    origin: '*',
+    credentials: true,
+  }),
+);
+
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
