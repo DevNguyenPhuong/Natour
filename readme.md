@@ -1,4 +1,4 @@
-![Alt text](https://raw.githubusercontent.com/DevNguyenPhuong/HTML-CSS/main/omnifood.jpg)
+![Alt text](https://raw.githubusercontent.com/DevNguyenPhuong/Natour/main/natours.jpg)
 
 <div align="center">
     <img src="https://skillicons.dev/icons?i=html,css,javascript,nodejs,mongodb,express" />
